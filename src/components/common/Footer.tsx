@@ -3,12 +3,12 @@ import { Link } from "react-router-dom"
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-orange-600 text-white mt-16">
+    <footer className="bg-blue-600 text-white mt-16">
       <div className="container mx-auto px-6 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h4 className="font-bold text-lg mb-2">Tổ chức Giáo dục FPT</h4>
-            <p className="text-sm text-orange-100/90">
+            <h4 className="font-bold text-lg mb-2">Tổ chức Giáo dục Trường Đại học Điện Lực Hà Nội</h4>
+            <p className="text-sm text-blue-100/90">
               Hệ thống giáo dục hàng đầu Việt Nam — thông tin, hoạt động câu lạc bộ và sự kiện.
             </p>
           </div>
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
 
           <div>
             <h4 className="font-semibold mb-2">Liên hệ</h4>
-            <p className="text-sm">Email: contact@fpt.edu.vn</p>
+            <p className="text-sm">Email: contact@epu.edu.vn</p>
             <p className="text-sm">Hotline: 024 7300 1866</p>
             <div className="flex items-center gap-3 mt-3">
               <a className="text-white/90 hover:text-white" href="#" aria-label="facebook">
@@ -57,8 +57,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-orange-500/30 pt-6 text-sm text-orange-100/80 text-center">
-          © {new Date().getFullYear()} FPT University Clubs Management. All rights reserved.
+        <div className="mt-8 border-t border-blue-500/30 pt-6 text-sm text-blue-100/80 text-center">
+          © {new Date().getFullYear()} Electric Power University Clubs Management. All rights reserved.
         </div>
       </div>
     </footer>

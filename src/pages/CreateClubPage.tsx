@@ -1542,7 +1542,7 @@ const CreateClubPage = () => {
                       onChange={(e) =>
                         setEditingRequest({ ...editingRequest, email: e.target.value })
                       }
-                      placeholder="club@fpt.edu.vn"
+                      placeholder="club@epu.edu.vn"
                     />
                   </div>
                 </div>
@@ -1650,7 +1650,7 @@ const CreateClubPage = () => {
                 id="proposalTitle"
                 value={proposalTitle}
                 onChange={(e) => setProposalTitle(e.target.value)}
-                placeholder="VD: Đề án thành lập CLB Lập trình FPT"
+                placeholder="VD: Đề án thành lập CLB Lập trình EPU"
               />
             </div>
             <div className="space-y-2">

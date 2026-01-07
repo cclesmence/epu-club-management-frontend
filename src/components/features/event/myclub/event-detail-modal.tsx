@@ -593,8 +593,8 @@ export function EventDetailModal({ event, clubId, onClose, onUpdated, onDeleted,
                 <Button
                   className={`${(!isEventEnded || isWithinOneDayAfterEnd) ? "flex-1" : "flex-1"} h-10 text-sm gap-2 ${
                     (isEventEnded && !isWithinOneDayAfterEnd)
-                      ? "bg-white text-foreground border border-border hover:bg-orange-500 hover:text-white hover:border-orange-600"
-                      : "bg-orange-500 hover:bg-orange-600 text-white"
+                      ? "bg-white text-foreground border border-border hover:bg-blue-500 hover:text-white hover:border-blue-600"
+                      : "bg-blue-500 hover:bg-blue-600 text-white"
                   }`}
                   onClick={() => {
                     onClose()

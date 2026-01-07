@@ -254,7 +254,7 @@ export default function CampusManagement() {
                         title="Chỉnh sửa"
                         onClick={() => openEditModal(campus)}
                       >
-                        <Pencil className="h-4 w-4 group-hover:text-orange-500 transition-colors" />
+                        <Pencil className="h-4 w-4 group-hover:text-blue-500 transition-colors" />
                       </button>
                       <button
                         className="inline-flex p-2 rounded-md hover:bg-destructive/10 transition group"
@@ -372,7 +372,7 @@ export default function CampusManagement() {
                 <Input
                   value={createForm.email}
                   onChange={(e) => setCreateForm((prev) => ({ ...prev, email: e.target.value }))}
-                  placeholder="Ví dụ: campus@fpt.edu.vn"
+                  placeholder="Ví dụ: campus@epu.edu.vn"
                 />
               </div>
             </div>

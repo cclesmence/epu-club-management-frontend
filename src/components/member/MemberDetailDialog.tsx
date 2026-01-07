@@ -506,7 +506,7 @@ const MemberDetailDialog = ({
                       {member.currentTerm?.teamName ? (
                         <Badge
                           variant="outline"
-                          className="border-orange-500/30 text-orange-600"
+                          className="border-blue-500/30 text-blue-600"
                         >
                           {member.currentTerm.teamName}
                         </Badge>
@@ -609,7 +609,7 @@ const MemberDetailDialog = ({
                 <span className="text-muted-foreground">•</span>
                 <Badge
                   variant="outline"
-                  className="border-orange-500/30 text-orange-600"
+                  className="border-blue-500/30 text-blue-600"
                 >
                   {member?.currentTerm?.teamName || "Chưa có ban"}
                 </Badge>

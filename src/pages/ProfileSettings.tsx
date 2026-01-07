@@ -252,8 +252,8 @@ export default function ProfileSettings() {
       <div className="p-4 sm:p-6 max-w-5xl mx-auto space-y-6">
         {/* Header */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="p-3 rounded-xl bg-gradient-to-br from-orange-100 to-orange-50 shadow-lg">
-            <User className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
+          <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 shadow-lg">
+            <User className="h-6 w-6 sm:h-8 sm:w-8 text-blue-500" />
           </div>
           <div className="flex-1">
             
@@ -267,8 +267,8 @@ export default function ProfileSettings() {
         </div>
 
         {/* Profile Card */}
-        <Card className="border-orange-200 shadow-lg hover:shadow-xl transition-shadow duration-300 !py-0">
-          <CardHeader className="bg-gradient-to-r from-orange-50 to-orange-100/50 border-b border-orange-200 !p-4 sm:!p-6 rounded-t-xl">
+        <Card className="border-blue-200 shadow-lg hover:shadow-xl transition-shadow duration-300 !py-0">
+          <CardHeader className="bg-gradient-to-r from-blue-50 to-blue-100/50 border-b border-blue-200 !p-4 sm:!p-6 rounded-t-xl">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div className="space-y-1">
                 <CardTitle className="text-xl sm:text-2xl">
@@ -286,7 +286,7 @@ export default function ProfileSettings() {
                   }
                 }}
                 variant={isEditing ? "outline" : "default"}
-                className="shadow-md w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
+                className="shadow-md w-full sm:w-auto bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white"
               >
                 {isEditing ? "Hủy" : "Chỉnh sửa"}
               </Button>
@@ -297,9 +297,9 @@ export default function ProfileSettings() {
               {/* Avatar Section */}
               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
                 <div className="relative group">
-                  <Avatar className="h-24 w-24 sm:h-32 sm:w-32 border-4 border-orange-200 shadow-lg">
+                  <Avatar className="h-24 w-24 sm:h-32 sm:w-32 border-4 border-blue-200 shadow-lg">
                     <AvatarImage src={profileData?.avatarUrl} />
-                    <AvatarFallback className="text-xl sm:text-2xl bg-gradient-to-br from-orange-100 to-orange-50 text-orange-600">
+                    <AvatarFallback className="text-xl sm:text-2xl bg-gradient-to-br from-blue-100 to-blue-50 text-blue-600">
                       {userData.name.charAt(0) || "U"}
                     </AvatarFallback>
                   </Avatar>
@@ -331,7 +331,7 @@ export default function ProfileSettings() {
                     {userData.name || "Người dùng"}
                   </h3>
                   <div className="flex gap-2 flex-wrap justify-center sm:justify-start">
-                    <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-md">
+                    <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md">
                       <Shield className="h-3 w-3 mr-1" />
                       {getSystemRoleDisplay(
                         profileData?.systemRoleName || "STUDENT"
@@ -353,7 +353,7 @@ export default function ProfileSettings() {
                     htmlFor="dateOfBirth"
                     className="flex items-center gap-2"
                   >
-                    <CalendarDays className="h-4 w-4 text-orange-500" />
+                    <CalendarDays className="h-4 w-4 text-blue-500" />
                     Ngày sinh
                   </Label>
                   <Input
@@ -364,13 +364,13 @@ export default function ProfileSettings() {
                       setUserData({ ...userData, dateOfBirth: e.target.value })
                     }
                     disabled={!isEditing}
-                    className="border-orange-200 focus:border-orange-400 disabled:opacity-60"
+                    className="border-blue-200 focus:border-blue-400 disabled:opacity-60"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="name" className="flex items-center gap-2">
-                    <User className="h-4 w-4 text-orange-500" />
+                    <User className="h-4 w-4 text-blue-500" />
                     Họ và tên
                   </Label>
                   <Input
@@ -380,7 +380,7 @@ export default function ProfileSettings() {
                       setUserData({ ...userData, name: e.target.value })
                     }
                     disabled={!isEditing}
-                    className="border-orange-200 focus:border-orange-400 disabled:opacity-60"
+                    className="border-blue-200 focus:border-blue-400 disabled:opacity-60"
                   />
                 </div>
 
@@ -389,20 +389,20 @@ export default function ProfileSettings() {
                     htmlFor="studentId"
                     className="flex items-center gap-2"
                   >
-                    <IdCard className="h-4 w-4 text-orange-500" />
+                    <IdCard className="h-4 w-4 text-blue-500" />
                     Mã số sinh viên
                   </Label>
                   <Input
                     id="studentId"
                     value={profileData?.studentCode || ""}
                     disabled
-                    className="border-orange-200 focus:border-orange-400 disabled:opacity-60"
+                    className="border-blue-200 focus:border-blue-400 disabled:opacity-60"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="email" className="flex items-center gap-2">
-                    <Mail className="h-4 w-4 text-orange-500" />
+                    <Mail className="h-4 w-4 text-blue-500" />
                     Email
                   </Label>
                   <Input
@@ -410,7 +410,7 @@ export default function ProfileSettings() {
                     type="email"
                     value={profileData?.email || ""}
                     disabled
-                    className={`border-orange-200 focus:border-orange-400 disabled:opacity-60 ${
+                    className={`border-blue-200 focus:border-blue-400 disabled:opacity-60 ${
                       validationErrors.email ? "border-red-500 focus:border-red-500" : ""
                     }`}
                   />
@@ -424,7 +424,7 @@ export default function ProfileSettings() {
 
                 <div className="space-y-2">
                   <Label htmlFor="phone" className="flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-orange-500" />
+                    <Phone className="h-4 w-4 text-blue-500" />
                     Số điện thoại
                   </Label>
                   <Input
@@ -438,7 +438,7 @@ export default function ProfileSettings() {
                       }
                     }}
                     disabled={!isEditing}
-                    className={`border-orange-200 focus:border-orange-400 disabled:opacity-60 ${
+                    className={`border-blue-200 focus:border-blue-400 disabled:opacity-60 ${
                       validationErrors.phone ? "border-red-500 focus:border-red-500" : ""
                     }`}
                     placeholder="0xxxxxxxxx hoặc +84xxxxxxxxx"
@@ -456,7 +456,7 @@ export default function ProfileSettings() {
                 <div className="flex justify-end">
                   <Button
                     onClick={handleSaveProfile}
-                    className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg hover:shadow-xl transition-all"
+                    className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all"
                   >
                     <Save className="h-4 w-4 mr-2" />
                     Lưu thay đổi
@@ -469,11 +469,11 @@ export default function ProfileSettings() {
 
         {/* Clubs Activity History Card */}
         {!loading && profileData && profileData.clubMemberships.length > 0 && (
-          <Card className="border-orange-200 shadow-lg hover:shadow-xl transition-shadow duration-300 !py-0">
-            <CardHeader className="bg-gradient-to-r from-orange-50 to-orange-100/50 border-b border-orange-200 !p-4 sm:!p-6 rounded-t-xl">
+          <Card className="border-blue-200 shadow-lg hover:shadow-xl transition-shadow duration-300 !py-0">
+            <CardHeader className="bg-gradient-to-r from-blue-50 to-blue-100/50 border-b border-blue-200 !p-4 sm:!p-6 rounded-t-xl">
               <div className="space-y-1">
                 <CardTitle className="flex items-center gap-2 text-xl sm:text-2xl">
-                  <Users className="h-5 w-5 sm:h-6 sm:w-6 text-orange-500" />
+                  <Users className="h-5 w-5 sm:h-6 sm:w-6 text-blue-500" />
                   Lịch sử hoạt động CLB
                 </CardTitle>
                 <CardDescription className="text-sm">
@@ -507,7 +507,7 @@ export default function ProfileSettings() {
                     className="mt-6 space-y-6"
                   >
                     {/* Club Overview */}
-                    <div className="flex items-center justify-between p-5 rounded-xl bg-gradient-to-br from-orange-50 via-orange-100/30 to-transparent border border-orange-200 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div className="flex items-center justify-between p-5 rounded-xl bg-gradient-to-br from-blue-50 via-blue-100/30 to-transparent border border-blue-200 shadow-sm hover:shadow-md transition-all duration-300">
                       <div className="space-y-1">
                         <h3 className="font-semibold text-xl text-foreground">
                           {club.clubName}
@@ -537,8 +537,8 @@ export default function ProfileSettings() {
                     {/* Activity History Timeline */}
                     <div className="space-y-3">
                       <h4 className="font-semibold flex items-center gap-2 text-foreground text-lg">
-                        <div className="p-2 rounded-lg bg-orange-100">
-                          <Calendar className="h-4 w-4 text-orange-500" />
+                        <div className="p-2 rounded-lg bg-blue-100">
+                          <Calendar className="h-4 w-4 text-blue-500" />
                         </div>
                         Lịch sử vai trò
                       </h4>
@@ -546,7 +546,7 @@ export default function ProfileSettings() {
                       {club.roles.length > 0 ? (
                         <div className="space-y-3 relative pl-8">
                           {/* Timeline line */}
-                          <div className="absolute left-[11px] top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-400 via-orange-300 to-transparent"></div>
+                          <div className="absolute left-[11px] top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 via-blue-300 to-transparent"></div>
 
                           {club.roles.map((role) => (
                             <div
@@ -567,7 +567,7 @@ export default function ProfileSettings() {
                               </div>
 
                               {/* Activity Card */}
-                              <Card className="border-orange-200 hover:border-orange-300 hover:shadow-lg transition-all duration-300 overflow-hidden">
+                              <Card className="border-blue-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 overflow-hidden">
                                 <CardContent className="p-5">
                                   <div className="space-y-4">
                                     {/* Header */}
@@ -595,30 +595,30 @@ export default function ProfileSettings() {
                                       </div>
                                     </div>
 
-                                    <Separator className="bg-orange-200" />
+                                    <Separator className="bg-blue-200" />
 
                                     {/* Details Grid */}
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                      <div className="space-y-2 p-3 rounded-lg bg-gradient-to-br from-orange-50 to-transparent border border-orange-200">
+                                      <div className="space-y-2 p-3 rounded-lg bg-gradient-to-br from-blue-50 to-transparent border border-blue-200">
                                         <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
-                                          <Shield className="h-4 w-4 text-orange-500" />
+                                          <Shield className="h-4 w-4 text-blue-500" />
                                           Vai trò
                                         </div>
-                                        <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-sm text-sm">
+                                        <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-sm text-sm">
                                           {role.clubRoleName}
                                         </Badge>
                                       </div>
 
-                                      <div className="space-y-2 p-3 rounded-lg bg-gradient-to-br from-orange-50 to-transparent border border-orange-200">
+                                      <div className="space-y-2 p-3 rounded-lg bg-gradient-to-br from-blue-50 to-transparent border border-blue-200">
                                         <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
-                                          <Briefcase className="h-4 w-4 text-orange-500" />
+                                          <Briefcase className="h-4 w-4 text-blue-500" />
                                           Phân ban
                                         </div>
                                         <Badge
                                           variant="outline"
-                                          className="border-orange-300 bg-background text-sm"
+                                          className="border-blue-300 bg-background text-sm"
                                         >
-                                          <Building2 className="h-3 w-3 mr-1 text-orange-500" />
+                                          <Building2 className="h-3 w-3 mr-1 text-blue-500" />
                                           {role.teamName}
                                         </Badge>
                                       </div>
@@ -680,9 +680,9 @@ export default function ProfileSettings() {
 
             <div className="flex justify-center py-6">
               {previewAvatar && (
-                <Avatar className="h-48 w-48 border-4 border-orange-200 shadow-lg">
+                <Avatar className="h-48 w-48 border-4 border-blue-200 shadow-lg">
                   <AvatarImage src={previewAvatar} />
-                  <AvatarFallback className="text-4xl bg-gradient-to-br from-orange-100 to-orange-50 text-orange-600">
+                  <AvatarFallback className="text-4xl bg-gradient-to-br from-blue-100 to-blue-50 text-blue-600">
                     {userData.name.charAt(0) || "U"}
                   </AvatarFallback>
                 </Avatar>
@@ -700,7 +700,7 @@ export default function ProfileSettings() {
               <Button
                 onClick={handleConfirmAvatar}
                 disabled={uploadingAvatar}
-                className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
+                className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white"
               >
                 {uploadingAvatar ? (
                   <>
@@ -719,8 +719,8 @@ export default function ProfileSettings() {
         {loading && (
           <>
             {/* Profile Card Skeleton */}
-            <Card className="border-orange-200 shadow-lg !py-0">
-              <CardHeader className="bg-gradient-to-r from-orange-50 to-orange-100/50 border-b border-orange-200 !p-4 sm:!p-6 rounded-t-xl">
+            <Card className="border-blue-200 shadow-lg !py-0">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-blue-100/50 border-b border-blue-200 !p-4 sm:!p-6 rounded-t-xl">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                   <div className="space-y-2">
                     <Skeleton className="h-6 w-40" />
@@ -760,8 +760,8 @@ export default function ProfileSettings() {
             </Card>
 
             {/* Clubs Activity Skeleton */}
-            <Card className="border-orange-200 shadow-lg !py-0">
-              <CardHeader className="bg-gradient-to-r from-orange-50 to-orange-100/50 border-b border-orange-200 !p-4 sm:!p-6 rounded-t-xl">
+            <Card className="border-blue-200 shadow-lg !py-0">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-blue-100/50 border-b border-blue-200 !p-4 sm:!p-6 rounded-t-xl">
                 <div className="space-y-2">
                   <Skeleton className="h-6 w-48" />
                   <Skeleton className="h-4 w-72" />

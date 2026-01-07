@@ -100,13 +100,13 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/Logo_Trường_Đại_học_FPT.svg"
-              alt="FPT"
+              src="/Logo_Trường_Đại_học_EPU.svg"
+              alt="EPU"
               className="h-10"
             />
             <div className="hidden sm:block leading-tight">
-              <div className="text-[14px] font-semibold text-orange-600">
-                TỔ CHỨC GIÁO DỤC FPT
+              <div className="text-[14px] font-semibold text-blue-600">
+                TỔ CHỨC GIÁO DỤC TRƯỜNG ĐẠI HỌC ĐIỆN LỰC HÀ NỘI
               </div>
               <div className="text-[12px] text-gray-500">Clubs & Events</div>
             </div>
@@ -129,7 +129,7 @@ const Header: React.FC = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-[15px] font-medium text-gray-700 hover:text-orange-600 transition-colors"
+                className="text-[15px] font-medium text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {item.label}
               </Link>
@@ -148,14 +148,14 @@ const Header: React.FC = () => {
                 }}
               >
                 <DropdownMenuTrigger asChild>
-                  <button className="flex items-center gap-2 rounded-md px-2 py-1 hover:bg-orange-50 transition">
+                  <button className="flex items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-50 transition">
                     <Avatar className="h-9 w-9">
                       <AvatarImage src={user.avatarUrl} alt={user.fullName} />
-                      <AvatarFallback className="bg-orange-100 text-orange-600 text-sm">
+                      <AvatarFallback className="bg-blue-100 text-blue-600 text-sm">
                         {getInitials(user.fullName)}
                       </AvatarFallback>
                     </Avatar>
-                    <span className="hidden sm:block text-[15px] font-medium text-gray-700 group-hover:text-orange-600">
+                    <span className="hidden sm:block text-[15px] font-medium text-gray-700 group-hover:text-blue-600">
                       {user.fullName}
                     </span>
                   </button>
@@ -181,7 +181,7 @@ const Header: React.FC = () => {
                         onClick={() => navigate("/profile")}
                         className="cursor-pointer text-[14px] text-gray-700"
                       >
-                        <User className="mr-2 h-4 w-4 text-orange-500" />
+                        <User className="mr-2 h-4 w-4 text-blue-500" />
                         Thông tin cá nhân
                       </DropdownMenuItem>
 
@@ -195,7 +195,7 @@ const Header: React.FC = () => {
                             onSelect={(e) => e.preventDefault()}
                             className="cursor-pointer text-[14px] text-gray-700"
                           >
-                            <Users className="mr-2 h-4 w-4 text-orange-500" />
+                            <Users className="mr-2 h-4 w-4 text-blue-500" />
                             Câu lạc bộ của tôi
                           </DropdownMenuItem>
                         )}
@@ -204,7 +204,7 @@ const Header: React.FC = () => {
                         onClick={() => navigate("/create-club")}
                         className="cursor-pointer text-[14px] text-gray-700"
                       >
-                        <PlusCircle className="mr-2 h-4 w-4 text-orange-500" />
+                        <PlusCircle className="mr-2 h-4 w-4 text-blue-500" />
                         Đăng ký thành lập CLB
                       </DropdownMenuItem>
 
@@ -212,7 +212,7 @@ const Header: React.FC = () => {
                         onClick={() => navigate("/myRecruitmentApplications")}
                         className="cursor-pointer text-[14px] text-gray-700"
                       >
-                        <FileSignature className="mr-2 h-4 w-4 text-orange-500" />
+                        <FileSignature className="mr-2 h-4 w-4 text-blue-500" />
                         Đơn ứng tuyển của tôi
                       </DropdownMenuItem>
 
@@ -221,7 +221,7 @@ const Header: React.FC = () => {
                           onClick={() => navigate("/staff/events")}
                           className="cursor-pointer text-[14px] text-gray-700"
                         >
-                          <Building2 className="mr-2 h-4 w-4 text-orange-500" />
+                          <Building2 className="mr-2 h-4 w-4 text-blue-500" />
                           Trang quản lý của ICPDP
                         </DropdownMenuItem>
                       )}
@@ -231,7 +231,7 @@ const Header: React.FC = () => {
                           onClick={() => navigate("/admin")}
                           className="cursor-pointer text-[14px] text-gray-700"
                         >
-                          <Shield className="mr-2 h-4 w-4 text-orange-500" />
+                          <Shield className="mr-2 h-4 w-4 text-blue-500" />
                           Trang quản trị
                         </DropdownMenuItem>
                       )}
@@ -300,7 +300,7 @@ const Header: React.FC = () => {
                                   className="h-9 w-9 rounded-md object-cover"
                                 />
                               ) : (
-                                <div className="h-9 w-9 rounded-md bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+                                <div className="h-9 w-9 rounded-md bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
                                   <span className="text-white font-bold text-sm">
                                     {club.clubName?.charAt(0) || "C"}
                                   </span>
@@ -319,7 +319,7 @@ const Header: React.FC = () => {
             ) : (
               <Link
                 to="/login"
-                className="hidden sm:inline-block border border-orange-500 text-orange-500 text-[14px] px-4 py-1.5 rounded-md font-medium hover:bg-orange-50 transition"
+                className="hidden sm:inline-block border border-blue-500 text-blue-500 text-[14px] px-4 py-1.5 rounded-md font-medium hover:bg-blue-50 transition"
               >
                 Đăng nhập
               </Link>

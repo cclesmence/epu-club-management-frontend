@@ -12,7 +12,7 @@ const UpcomingEvents: React.FC<Props> = ({ events }) => {
     return (
       <div>
         <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-          <CalendarClock className="text-[#ff6b35]" />
+          <CalendarClock className="text-[#005ab7]" />
           Sự Kiện Sắp Diễn Ra
         </h3>
         <p className="text-sm text-gray-500">Hiện chưa có sự kiện nào sắp diễn ra.</p>
@@ -23,7 +23,7 @@ const UpcomingEvents: React.FC<Props> = ({ events }) => {
   return (
     <div>
       <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-        <CalendarClock className="text-[#ff6b35]" />
+        <CalendarClock className="text-[#005ab7]" />
         Sự Kiện Sắp Diễn Ra
       </h3>
 
@@ -44,11 +44,11 @@ const UpcomingEvents: React.FC<Props> = ({ events }) => {
             >
               <div className="text-center flex-shrink-0">
                 <p className="text-sm text-gray-500">{month}</p>
-                <p className="text-2xl font-bold text-[#ff6b35]">{day}</p>
+                <p className="text-2xl font-bold text-[#005ab7]">{day}</p>
               </div>
 
-              <div className="border-l-2 pl-4 group-hover:border-[#ff6b35] transition-colors">
-                <h4 className="font-bold group-hover:text-[#ff6b35] transition-colors">
+              <div className="border-l-2 pl-4 group-hover:border-[#005ab7] transition-colors">
+                <h4 className="font-bold group-hover:text-[#005ab7] transition-colors">
                   {event.title}
                 </h4>
                 <p className="text-sm text-gray-600">bởi {event.clubName}</p>
@@ -65,7 +65,7 @@ const UpcomingEvents: React.FC<Props> = ({ events }) => {
 
       <Link
         to="/events"
-        className="inline-block mt-8 text-[#ff6b35] hover:underline font-medium"
+        className="inline-block mt-8 text-[#005ab7] hover:underline font-medium"
       >
         Xem tất cả sự kiện →
       </Link>

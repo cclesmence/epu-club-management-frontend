@@ -1138,7 +1138,7 @@ export function ClubReportManagement() {
                                   "PENDING_UNIVERSITY" &&
                                 request.status?.toUpperCase() !==
                                   "RESUBMITTED_UNIVERSITY" && (
-                                  <Badge className="bg-orange-100 text-orange-700 border border-orange-300 font-semibold">
+                                  <Badge className="bg-blue-100 text-blue-700 border border-blue-300 font-semibold">
                                     Phải nộp lại lên trường
                                   </Badge>
                                 )}
@@ -2254,7 +2254,7 @@ export function ClubReportManagement() {
                         "PENDING_UNIVERSITY" &&
                       selectedReportDetail.status?.toUpperCase() !==
                         "RESUBMITTED_UNIVERSITY" && (
-                        <Badge className="bg-orange-100 text-orange-700 border border-orange-300">
+                        <Badge className="bg-blue-100 text-blue-700 border border-blue-300">
                           Phải nộp lại lên trường
                         </Badge>
                       )}

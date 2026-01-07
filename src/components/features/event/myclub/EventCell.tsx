@@ -55,7 +55,7 @@ export function EventCell({
               key={event.id}
               className={`text-[11px] px-1.5 py-0.5 rounded font-medium truncate cursor-pointer hover:opacity-90 flex-shrink-0 transition-opacity inline-flex items-center gap-1 ${
                 isPendingPublish
-                  ? "!bg-orange-500 !text-white"
+                  ? "!bg-blue-500 !text-white"
                   : isDraft
                     ? "!bg-gray-400 !text-white"
                     : getStatusColor(event.status)

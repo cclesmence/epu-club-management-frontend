@@ -550,7 +550,7 @@ const Members = () => {
             )}
             <div className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-br from-primary/10 to-primary-glow/10 border border-primary/20">
               <Award className="h-5 w-5 text-primary" />
-              <span className="text-sm font-medium text-primary">CLB FPT</span>
+              <span className="text-sm font-medium text-primary">CLB EPU</span>
             </div>
           </div>
         </div>
@@ -866,7 +866,7 @@ const Members = () => {
                               {member.currentTerm?.teamName && (
                                 <Badge
                                   variant="outline"
-                                  className="border-orange-500/30 text-orange-600"
+                                  className="border-blue-500/30 text-blue-600"
                                 >
                                   {member.currentTerm.teamName}
                                 </Badge>
@@ -1599,7 +1599,7 @@ const Members = () => {
                           [
                             "SE123456",
                             "Nguyễn Văn A",
-                            "anvse123456@fpt.edu.vn",
+                            "anvse123456@epu.edu.vn",
                             "0912345678",
                             "SP25",
                             "MEMBER",
@@ -1711,7 +1711,7 @@ const Members = () => {
                             </Badge>
                           </td>
                           <td className="px-3 py-2 text-muted-foreground">
-                            anvse@fpt.edu.vn
+                            anvse@epu.edu.vn
                           </td>
                         </tr>
                         <tr>

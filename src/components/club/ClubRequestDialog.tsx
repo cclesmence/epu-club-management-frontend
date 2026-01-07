@@ -181,7 +181,7 @@ export function ClubRequestDialog({
           </div>
 
           {isTimelineExpanded && (
-            <div className="space-y-4 rounded-lg border border-orange-100 bg-orange-50/40 p-4">
+            <div className="space-y-4 rounded-lg border border-blue-100 bg-blue-50/40 p-4">
               {timelineSteps.length === 0 ? (
                 <p className="text-sm text-muted-foreground">
                   Chưa có dữ liệu quy trình để hiển thị.

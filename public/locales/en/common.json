@@ -36,9 +36,9 @@
   },
   "login": {
     "title": "Club Management System",
-    "subtitle": "FPT University",
+    "subtitle": "Electric Power University",
     "description": "Connect students, manage activities and develop club community",
-    "instruction": "Use your Google account <b>@fpt.edu.vn</b> to access the system",
+    "instruction": "Use your Google account <b>@epu.edu.vn</b> to access the system",
     "loginFailed": "Login failed:",
     "loginError": "An error occurred during login"
   }

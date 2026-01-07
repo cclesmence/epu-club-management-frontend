@@ -307,7 +307,7 @@ export default function SemesterManagement() {
                         title="Chỉnh sửa"
                         onClick={() => openEditModal(semester)}
                       >
-                        <Pencil className="h-4 w-4 group-hover:text-orange-500 transition-colors" />
+                        <Pencil className="h-4 w-4 group-hover:text-blue-500 transition-colors" />
                       </button>
                       <button
                         className="inline-flex p-2 rounded-md hover:bg-destructive/10 transition group"

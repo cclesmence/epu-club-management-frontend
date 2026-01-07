@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { toast } from "sonner";
 import "./Login.css";
-import logoImage from "@/assets/Logo_FPT_Education.png";
+import logoImage from "@/assets/Logo_EPU_Education.png";
 
 declare global {
   interface Window {
@@ -249,7 +249,7 @@ const LoginPage: React.FC = () => {
         <h1 className="main-title">Hệ thống Quản lý Câu lạc bộ</h1>
 
         <div className="subtitle-tag">
-          <span>Đại học FPT</span>
+          <span>Trường Đại học Điện Lực Hà Nội</span>
         </div>
 
         <p className="description">
@@ -294,7 +294,7 @@ const LoginPage: React.FC = () => {
         </div>
 
         <p className="instruction">
-          Sử dụng tài khoản Google <b>@fpt.edu.vn</b> của bạn để truy cập hệ
+          Sử dụng tài khoản Google <b>@epu.edu.vn</b> của bạn để truy cập hệ
           thống
         </p>
 

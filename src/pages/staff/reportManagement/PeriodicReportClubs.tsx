@@ -333,7 +333,7 @@ export function PeriodicReportClubs() {
         case "RESUBMITTED_UNIVERSITY":
           return "bg-yellow-100 text-yellow-700";
         default:
-          return "bg-orange-100 text-orange-700"; // Đang yêu cầu nộp lại
+          return "bg-blue-100 text-blue-700"; // Đang yêu cầu nộp lại
       }
     }
 
@@ -341,7 +341,7 @@ export function PeriodicReportClubs() {
     // If mustResubmit is true, use orange color for "Đang yêu cầu nộp lại"
     // Otherwise, use red color for "Chưa nộp"
     if (mustResubmit === true) {
-      return "bg-orange-100 text-orange-700";
+      return "bg-blue-100 text-blue-700";
     }
     return "bg-red-100 text-red-700";
   };

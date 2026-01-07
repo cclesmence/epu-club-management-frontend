@@ -387,7 +387,7 @@ export default function ClubsPage() {
       >
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle className="flex items-center gap-2 text-orange-700">
+            <DialogTitle className="flex items-center gap-2 text-blue-700">
               <AlertCircle className="h-5 w-5" />
               Không thể ứng tuyển
             </DialogTitle>
@@ -398,8 +398,8 @@ export default function ClubsPage() {
                   <span className="font-semibold">{selectedClubName}</span> và
                   không thể ứng tuyển lại.
                 </p>
-                <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-                  <p className="text-sm text-orange-800">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <p className="text-sm text-blue-800">
                     💡 <span className="font-medium">Gợi ý:</span> Nếu bạn muốn
                     tham gia vào phòng ban khác hoặc thay đổi vai trò, vui lòng
                     liên hệ với ban quản lý câu lạc bộ.

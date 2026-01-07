@@ -10,7 +10,7 @@ const LatestNews: React.FC<Props> = ({ news }) => {
   return (
     <div>
       <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-        <Flame className="text-[#ff6b35]" />
+        <Flame className="text-[#005ab7]" />
         Tin Tức Nóng
       </h3>
       <div className="space-y-6">
@@ -22,7 +22,7 @@ const LatestNews: React.FC<Props> = ({ news }) => {
               className="w-24 h-24 object-cover rounded-lg flex-shrink-0"
             />
             <div>
-              <h4 className="font-bold group-hover:text-[#ff6b35] transition-colors line-clamp-2">
+              <h4 className="font-bold group-hover:text-[#005ab7] transition-colors line-clamp-2">
                 {item.title}
               </h4>
               <p className="text-sm text-gray-600 mt-1 line-clamp-3">{item.excerpt}</p>
@@ -30,7 +30,7 @@ const LatestNews: React.FC<Props> = ({ news }) => {
           </a>
         ))}
       </div>
-      <a href="/news" className="inline-block mt-8 text-[#ff6b35] hover:underline font-medium">
+      <a href="/news" className="inline-block mt-8 text-[#005ab7] hover:underline font-medium">
         Xem tất cả tin tức →
       </a>
     </div>

@@ -88,8 +88,8 @@ const STATUS_OPTIONS = [
 const badgeClass = (s?: string) => {
   const map: Record<string, string> = {
     DRAFT: "bg-slate-100 text-slate-700 ring-1 ring-slate-200",
-    PENDING_CLUB: "bg-orange-50 text-orange-700 ring-1 ring-orange-200",
-    PENDING_UNIVERSITY: "bg-orange-50 text-orange-700 ring-1 ring-orange-200",
+    PENDING_CLUB: "bg-blue-50 text-blue-700 ring-1 ring-blue-200",
+    PENDING_UNIVERSITY: "bg-blue-50 text-blue-700 ring-1 ring-blue-200",
     APPROVED_CLUB: "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200",
     APPROVED_UNIVERSITY:
       "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200",
@@ -633,12 +633,12 @@ function PresidentNewsListImpl() {
                 placeholder="Tìm theo tiêu đề, mô tả…"
                 value={kw}
                 onChange={(e) => setKw(e.target.value)}
-                className="pl-9 pr-3 py-2 border rounded-lg text-sm w-full focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                className="pl-9 pr-3 py-2 border rounded-lg text-sm w-full focus:outline-none focus:ring-2 focus:ring-blue-500/40"
               />
             </div>
 
             <select
-              className="border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+              className="border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/40"
               value={status}
               onChange={(e) => {
                 const s = e.target.value as RequestStatus | "";
@@ -659,7 +659,7 @@ function PresidentNewsListImpl() {
         {clubId && (
           <Link
             to={`/myclub/${clubId}/news-editor`}
-            className="px-3 py-2 rounded bg-orange-500 hover:bg-orange-600 text-white flex items-center gap-2"
+            className="px-3 py-2 rounded bg-blue-500 hover:bg-blue-600 text-white flex items-center gap-2"
           >
             <Plus className="h-4 w-4" />
             Tạo tin tức

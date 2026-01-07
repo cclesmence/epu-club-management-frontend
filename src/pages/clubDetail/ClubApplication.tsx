@@ -674,7 +674,7 @@ export function ClubApplicationForm({
                   <CardTitle>Chọn phòng ban</CardTitle>
                   <Badge
                     variant="secondary"
-                    className="bg-orange-100 text-orange-700 hover:bg-orange-200"
+                    className="bg-blue-100 text-blue-700 hover:bg-blue-200"
                   >
                     Bắt buộc
                   </Badge>
@@ -745,7 +745,7 @@ export function ClubApplicationForm({
                         {question.isRequired === 1 && (
                           <Badge
                             variant="secondary"
-                            className="ml-2 bg-orange-100 text-orange-700 hover:bg-orange-200"
+                            className="ml-2 bg-blue-100 text-blue-700 hover:bg-blue-200"
                           >
                             Bắt buộc
                           </Badge>

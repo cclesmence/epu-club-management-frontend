@@ -19,7 +19,7 @@ export function EventHeader({ event }: EventHeaderProps) {
   const eventName = event?.name || "Điểm Danh Sự Kiện"
   const eventDate = event?.date || new Date().toLocaleDateString("vi-VN")
   const eventTime = event?.time || new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" })
-  const eventLocation = event?.location || "Tòa nhà FPT"
+  const eventLocation = event?.location || "Tòa nhà EPU"
 
   return (
     <Card className="border-2 border-primary bg-gradient-to-r from-primary/10 to-primary/5">

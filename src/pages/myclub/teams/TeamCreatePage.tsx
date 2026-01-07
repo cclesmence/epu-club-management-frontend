@@ -111,7 +111,7 @@ function MemberSelector({
     <div className="space-y-3" ref={boxRef}>
       <Label className="text-gray-800 font-semibold flex items-center gap-2">
         Tìm thành viên
-        <span className="text-xs px-2 py-0.5 rounded-full bg-orange-100 text-orange-700">
+        <span className="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">
           Tùy chọn
         </span>
       </Label>
@@ -130,7 +130,7 @@ function MemberSelector({
               onChange={(e) => setSearchTerm(e.target.value)}
               onFocus={handleFocus}
               disabled={loading}
-              className="pl-10 border-gray-300 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+              className="pl-10 border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
             />
           </div>
         </div>
@@ -141,7 +141,7 @@ function MemberSelector({
               filtered.map((member) => (
                 <div
                   key={member.id}
-                  className="p-3 hover:bg-orange-50 cursor-pointer flex items-center justify-between group border-b last:border-b-0"
+                  className="p-3 hover:bg-blue-50 cursor-pointer flex items-center justify-between group border-b last:border-b-0"
                 >
                   <span className="text-gray-900 font-medium">
                     {member.name}
@@ -153,7 +153,7 @@ function MemberSelector({
                       onAddMember(member);
                       setSearchTerm("");
                     }}
-                    className="opacity-0 group-hover:opacity-100 transition-opacity bg-orange-500 hover:bg-orange-600 text-white"
+                    className="opacity-0 group-hover:opacity-100 transition-opacity bg-blue-500 hover:bg-blue-600 text-white"
                   >
                     <Plus size={16} />
                   </Button>
@@ -367,7 +367,7 @@ export default function TeamCreatePage() {
       {/* Header tổng thể */}
       <div className="mb-2">
         <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-          <span className="inline-block w-2 h-6 rounded-full bg-orange-500" />
+          <span className="inline-block w-2 h-6 rounded-full bg-blue-500" />
           Tạo phòng ban mới
         </h1>
         <p className="text-sm text-gray-500 mt-1">
@@ -378,11 +378,11 @@ export default function TeamCreatePage() {
 
       {/* Thông tin cơ bản */}
       <Card className="rounded-2xl shadow-md bg-white overflow-hidden">
-        <CardHeader className="p-6 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+        <CardHeader className="p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
           <CardTitle className="w-full text-white">
             Tên & thông tin phòng ban
           </CardTitle>
-          <CardDescription className="text-orange-100/90 w-full">
+          <CardDescription className="text-blue-100/90 w-full">
             Đây là thông tin sẽ hiển thị cho toàn bộ thành viên.
           </CardDescription>
         </CardHeader>
@@ -396,7 +396,7 @@ export default function TeamCreatePage() {
               placeholder="Ví dụ: Ban Truyền thông"
               value={teamName}
               onChange={(e) => setTeamName(e.target.value)}
-              className={`border-gray-300 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 ${
+              className={`border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 ${
                 errors.teamName ? "border-red-500" : ""
               }`}
             />
@@ -418,7 +418,7 @@ export default function TeamCreatePage() {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               rows={4}
-              className={`border-gray-300 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 resize-none ${
+              className={`border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 resize-none ${
                 errors.description ? "border-red-500" : ""
               }`}
             />
@@ -440,7 +440,7 @@ export default function TeamCreatePage() {
               value={linkGroupChat}
               onChange={(e) => setLinkGroupChat(e.target.value)}
               type="url"
-              className={`border-gray-300 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 ${
+              className={`border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 ${
                 errors.linkGroupChat ? "border-red-500" : ""
               }`}
             />
@@ -455,9 +455,9 @@ export default function TeamCreatePage() {
 
       {/* Chọn thành viên */}
       <Card className="rounded-2xl shadow-md bg-white overflow-visible">
-        <CardHeader className="p-6 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+        <CardHeader className="p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
           <CardTitle className="w-full text-white">Chọn thành viên</CardTitle>
-          <CardDescription className="text-orange-50/90 w-full">
+          <CardDescription className="text-blue-50/90 w-full">
             Thêm thành viên vào phòng ban để phân công vai trò (không bắt buộc).
           </CardDescription>
         </CardHeader>
@@ -473,11 +473,11 @@ export default function TeamCreatePage() {
       {/* Danh sách đã chọn + gán vai trò */}
       {selectedMembers.length > 0 && (
         <Card className="rounded-2xl overflow-hidden shadow-md bg-white">
-          <CardHeader className="bg-orange-50 rounded-t-lg border-b border-orange-100 p-4">
+          <CardHeader className="bg-blue-50 rounded-t-lg border-b border-blue-100 p-4">
             <CardTitle className="text-lg flex items-center justify-between w-full">
               <span>Danh sách thành viên ({selectedMembers.length})</span>
               <div className="flex flex-col items-end text-right">
-                <span className="text-xs font-normal text-orange-700 bg-orange-100 px-2 py-1 rounded-full">
+                <span className="text-xs font-normal text-blue-700 bg-blue-100 px-2 py-1 rounded-full">
                   Chọn Trưởng ban / Phó ban
                 </span>
                 <span className="text-[11px] text-gray-500 mt-1">
@@ -494,7 +494,7 @@ export default function TeamCreatePage() {
                 return (
                   <div
                     key={m.id}
-                    className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-orange-50/40 transition-colors"
+                    className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-blue-50/40 transition-colors"
                   >
                     <div className="flex-1">
                       <p className="font-medium text-gray-900">{m.name}</p>
@@ -504,7 +504,7 @@ export default function TeamCreatePage() {
                           onClick={() => handleSetLeader(m)}
                           className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                             isLeader
-                              ? "bg-orange-500 text-white shadow-sm"
+                              ? "bg-blue-500 text-white shadow-sm"
                               : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                           }`}
                           title={isLeader ? "Bỏ Trưởng ban" : "Gán Trưởng ban"}
@@ -553,7 +553,7 @@ export default function TeamCreatePage() {
         <Button
           type="submit"
           disabled={submitting}
-          className="flex-1 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-md disabled:opacity-70 disabled:cursor-not-allowed"
+          className="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold shadow-md disabled:opacity-70 disabled:cursor-not-allowed"
         >
           <Plus size={18} className="mr-2" />
           {submitting ? "Đang tạo..." : "Tạo phòng ban"}

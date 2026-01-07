@@ -240,7 +240,7 @@ export default function NewsPageList() {
               Cập nhật tin tức mới nhất
             </h1>
             <p className="text-base md:text-lg text-muted-foreground text-pretty">
-              Khám phá các hoạt động, sự kiện và thông báo từ các câu lạc bộ tại FPT University
+              Khám phá các hoạt động, sự kiện và thông báo từ các câu lạc bộ tại Trường Đại học Điện Lực Hà Nội
             </p>
           </div>
         </div>

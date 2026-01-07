@@ -157,7 +157,7 @@ const managementColors: Record<string, string> = {
   manage_events: "bg-gradient-to-br from-green-500 to-green-600",
   manage_recruitments: "bg-gradient-to-br from-red-500 to-red-600",
   manage_finance: "bg-gradient-to-br from-emerald-500 to-emerald-600",
-  pending_requests: "bg-gradient-to-br from-orange-500 to-orange-600",
+  pending_requests: "bg-gradient-to-br from-blue-500 to-blue-600",
   manage_reports: "bg-gradient-to-br from-pink-500 to-pink-600",
   club_news: "bg-gradient-to-br from-indigo-500 to-indigo-600",
   manage_information: "bg-gradient-to-br from-indigo-500 to-indigo-600",
@@ -545,26 +545,26 @@ export const ClubLayout = () => {
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="hidden sm:flex items-center gap-2 hover:bg-orange-50 transition"
+                  className="hidden sm:flex items-center gap-2 hover:bg-blue-50 transition"
                   onClick={() => navigate("/")}
                 >
-                  <Home className="h-4 w-4 text-orange-500" />
-                  <span className="font-medium text-orange-600">Trang chủ</span>
+                  <Home className="h-4 w-4 text-blue-500" />
+                  <span className="font-medium text-blue-600">Trang chủ</span>
                 </Button>
                 <NotificationBell />
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <button className="flex items-center gap-2 rounded-md px-2 py-1 hover:bg-orange-50 transition">
+                    <button className="flex items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-50 transition">
                       <Avatar className="h-9 w-9">
                         <AvatarImage
                           src={user?.avatarUrl}
                           alt={user?.fullName}
                         />
-                        <AvatarFallback className="bg-orange-100 text-orange-600 text-sm">
+                        <AvatarFallback className="bg-blue-100 text-blue-600 text-sm">
                           {user ? getInitials(user.fullName) : "U"}
                         </AvatarFallback>
                       </Avatar>
-                      <span className="hidden sm:block text-[15px] font-medium text-gray-700 group-hover:text-orange-600 max-w-[120px] truncate">
+                      <span className="hidden sm:block text-[15px] font-medium text-gray-700 group-hover:text-blue-600 max-w-[120px] truncate">
                         {user?.fullName}
                       </span>
                     </button>
@@ -590,7 +590,7 @@ export const ClubLayout = () => {
                           onClick={() => navigate("/profile")}
                           className="cursor-pointer text-[14px] text-gray-700"
                         >
-                          <User className="mr-2 h-4 w-4 text-orange-500" />
+                          <User className="mr-2 h-4 w-4 text-blue-500" />
                           Thông tin cá nhân
                         </DropdownMenuItem>
 
@@ -603,7 +603,7 @@ export const ClubLayout = () => {
                               onSelect={(e) => e.preventDefault()}
                               className="cursor-pointer text-[14px] text-gray-700"
                             >
-                              <Users className="mr-2 h-4 w-4 text-orange-500" />
+                              <Users className="mr-2 h-4 w-4 text-blue-500" />
                               Câu lạc bộ của tôi
                             </DropdownMenuItem>
                           )}
@@ -612,7 +612,7 @@ export const ClubLayout = () => {
                           onClick={() => navigate("/create-club")}
                           className="cursor-pointer text-[14px] text-gray-700"
                         >
-                          <PlusCircle className="mr-2 h-4 w-4 text-orange-500" />
+                          <PlusCircle className="mr-2 h-4 w-4 text-blue-500" />
                           Đăng ký thành lập CLB
                         </DropdownMenuItem>
 
@@ -620,7 +620,7 @@ export const ClubLayout = () => {
                           onClick={() => navigate("/myRecruitmentApplications")}
                           className="cursor-pointer text-[14px] text-gray-700"
                         >
-                          <FileSignature className="mr-2 h-4 w-4 text-orange-500" />
+                          <FileSignature className="mr-2 h-4 w-4 text-blue-500" />
                           Đơn ứng tuyển của tôi
                         </DropdownMenuItem>
 
@@ -629,7 +629,7 @@ export const ClubLayout = () => {
                             onClick={() => navigate("/staff/club-creation")}
                             className="cursor-pointer text-[14px] text-gray-700"
                           >
-                            <Building2 className="mr-2 h-4 w-4 text-orange-500" />
+                            <Building2 className="mr-2 h-4 w-4 text-blue-500" />
                             Trang quản lý của ICPDP
                           </DropdownMenuItem>
                         )}
@@ -639,7 +639,7 @@ export const ClubLayout = () => {
                             onClick={() => navigate("/admin")}
                             className="cursor-pointer text-[14px] text-gray-700"
                           >
-                            <Shield className="mr-2 h-4 w-4 text-orange-500" />
+                            <Shield className="mr-2 h-4 w-4 text-blue-500" />
                             Trang quản trị
                           </DropdownMenuItem>
                         )}
@@ -711,7 +711,7 @@ export const ClubLayout = () => {
                                     className="h-9 w-9 rounded-md object-cover"
                                   />
                                 ) : (
-                                  <div className="h-9 w-9 rounded-md bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+                                  <div className="h-9 w-9 rounded-md bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
                                     <span className="text-white font-bold text-sm">
                                       {club.clubName?.charAt(0) || "C"}
                                     </span>

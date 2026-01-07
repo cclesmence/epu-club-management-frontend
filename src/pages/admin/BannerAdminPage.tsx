@@ -71,7 +71,7 @@ export default function BannerAdminPage() {
               <Input
                 value={form.title}
                 onChange={(e) => update("title", e.target.value)}
-                placeholder="Ví dụ: Hơn 50+ Câu Lạc Bộ"
+                placeholder="Ví dụ: Rất nhiều Câu Lạc Bộ"
               />
             </div>
 

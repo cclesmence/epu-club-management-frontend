@@ -52,7 +52,7 @@ function highlightMatch(text: string, query: string) {
   const parts = text.split(regex);
   return parts.map((part, idx) =>
     part.toLowerCase() === q.toLowerCase() ? (
-      <span key={idx} className="font-semibold text-[#ff6b35]">
+      <span key={idx} className="font-semibold text-[#005ab7]">
         {part}
       </span>
     ) : (
@@ -235,7 +235,7 @@ const HomePage: React.FC = () => {
           <h1 className="text-4xl md:text-6xl font-black uppercase tracking-wide">
             {banner?.title ?? "Đang tải..."}
           </h1>
-          <h2 className="text-4xl md:text-6xl font-black uppercase text-[#ff6b35]">
+          <h2 className="text-4xl md:text-6xl font-black uppercase text-[#005ab7]">
             {banner?.subtitle ?? ""}
           </h2>
 
@@ -255,13 +255,13 @@ const HomePage: React.FC = () => {
                     );
                 }}
                 placeholder="Tìm kiếm câu lạc bộ, sự kiện, tin tức..."
-                className="w-full pl-5 pr-36 py-3 rounded-full bg-white text-gray-800 shadow-lg border border-white/40 focus:ring-2 focus:ring-[#ff6b35]"
+                className="w-full pl-5 pr-36 py-3 rounded-full bg-white text-gray-800 shadow-lg border border-white/40 focus:ring-2 focus:ring-[#005ab7]"
               />
 
               <button
                 type="button"
                 onClick={() => searchTerm && performSearch(searchTerm)}
-                className="absolute right-2 px-6 py-2 rounded-full bg-[#ff6b35] text-white shadow-md flex items-center gap-2 hover:bg-[#e55a2b]"
+                className="absolute right-2 px-6 py-2 rounded-full bg-[#005ab7] text-white shadow-md flex items-center gap-2 hover:bg-[#e55a2b]"
               >
                 <Search className="w-5 h-5" />
                 Tìm kiếm
@@ -275,7 +275,7 @@ const HomePage: React.FC = () => {
                 <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-xl max-h-96 overflow-y-auto z-20 border border-slate-100 text-gray-800">
                   {searchLoading && (
                     <div className="px-4 py-3 text-sm text-gray-500 flex items-center gap-2">
-                      <div className="h-4 w-4 rounded-full border-2 border-t-transparent border-[#ff6b35] animate-spin" />
+                      <div className="h-4 w-4 rounded-full border-2 border-t-transparent border-[#005ab7] animate-spin" />
                       <span>Đang tìm kiếm...</span>
                     </div>
                   )}
@@ -350,7 +350,7 @@ const HomePage: React.FC = () => {
 
         {showSkeleton && (
           <div className="text-center py-16">
-            <div className="h-12 w-12 border-b-2 border-[#ff6b35] animate-spin mx-auto rounded-full" />
+            <div className="h-12 w-12 border-b-2 border-[#005ab7] animate-spin mx-auto rounded-full" />
             <p className="mt-4 text-gray-600">Đang tải dữ liệu trang chủ...</p>
           </div>
         )}

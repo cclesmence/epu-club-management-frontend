@@ -130,7 +130,7 @@ export function ClubRequestForm({ onSubmit }: ClubRequestFormProps) {
               <Input
                 id="clubName"
                 name="clubName"
-                placeholder="VD: CLB Lập trình FPT"
+                placeholder="VD: CLB Lập trình EPU"
                 value={formData.clubName}
                 onChange={handleChange}
                 required
@@ -144,7 +144,7 @@ export function ClubRequestForm({ onSubmit }: ClubRequestFormProps) {
               <Input
                 id="clubCode"
                 name="clubCode"
-                placeholder="VD: FPTU_CODING"
+                placeholder="VD: EPU_CODING"
                 value={formData.clubCode}
                 onChange={handleChange}
                 required
@@ -239,7 +239,7 @@ export function ClubRequestForm({ onSubmit }: ClubRequestFormProps) {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="club@fpt.edu.vn"
+                placeholder="club@epu.edu.vn"
                 value={formData.email}
                 onChange={handleChange}
                 required

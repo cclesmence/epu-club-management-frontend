@@ -809,7 +809,7 @@ export function StaffClubsManagement() {
                             }
                           }}
                           type="email"
-                          placeholder="president@fpt.edu.vn"
+                          placeholder="president@epu.edu.vn"
                         />
                         <p className="text-sm text-muted-foreground">
                           Hãy điền email có tồn tại trong hệ thống FAP

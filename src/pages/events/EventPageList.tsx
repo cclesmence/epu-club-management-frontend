@@ -326,10 +326,10 @@ export function EventsPage() {
               <span>Sự kiện</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
-              Khám phá các sự kiện tại FPT University
+              Khám phá các sự kiện tại Trường Đại học Điện Lực Hà Nội
             </h1>
             <p className="text-lg text-muted-foreground mb-8 text-pretty">
-              Tham gia các hoạt động, workshop, và sự kiện thú vị được tổ chức bởi các câu lạc bộ sinh viên FPT
+              Tham gia các hoạt động, workshop, và sự kiện thú vị được tổ chức bởi các câu lạc bộ sinh viên Trường Đại học Điện Lực Hà Nội
             </p>
 
             {/* Search Bar */}

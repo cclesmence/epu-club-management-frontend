@@ -72,7 +72,7 @@ const STATUS_CONFIG = {
     label: "Chờ bổ sung hồ sơ",
     variant: "secondary" as const,
     icon: FileText,
-    color: "text-orange-500",
+    color: "text-blue-500",
   },
   documents_submitted: {
     label: "Đã nộp hồ sơ",
@@ -120,7 +120,7 @@ const STATUS_CONFIG = {
     label: "Cần chỉnh sửa",
     variant: "secondary" as const,
     icon: FileText,
-    color: "text-orange-500",
+    color: "text-blue-500",
   },
   withdrawn: {
     label: "Đã rút đơn",

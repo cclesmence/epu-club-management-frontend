@@ -100,7 +100,7 @@ const STATUS_CONFIG: Record<string, { label: string; color: string }> = {
   },
   NAME_REVISION_REQUIRED: {
     label: "Chờ cập nhật tên",
-    color: "bg-orange-100 text-orange-800",
+    color: "bg-blue-100 text-blue-800",
   },
   CONTACT_REJECTED: {
     label: "Từ chối liên hệ",
@@ -108,7 +108,7 @@ const STATUS_CONFIG: Record<string, { label: string; color: string }> = {
   },
   PROPOSAL_REQUIRED: {
     label: "Chờ nộp đề án",
-    color: "bg-orange-100 text-orange-800",
+    color: "bg-blue-100 text-blue-800",
   },
   PROPOSAL_SUBMITTED: {
     label: "Đã nộp đề án",
@@ -1371,7 +1371,7 @@ export default function ClubCreationManagement() {
                 </div>
 
                 {isTimelineExpanded && selectedRequest && workflowSteps.length > 0 && (
-                  <div className="space-y-4 rounded-lg border border-orange-100 bg-orange-50/40 p-4">
+                  <div className="space-y-4 rounded-lg border border-blue-100 bg-blue-50/40 p-4">
                     {(() => {
                       // Group history by step_code
                       const completedStepCodes = new Set(

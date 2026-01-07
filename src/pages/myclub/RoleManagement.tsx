@@ -298,7 +298,7 @@ export default function RoleManagement() {
       case 1:
         return "bg-red-500"; // Chủ tịch - Đỏ (quyền cao nhất)
       case 2:
-        return "bg-orange-500"; // Phó chủ tịch - Cam
+        return "bg-blue-500"; // Phó chủ tịch - Xanh
       case 3:
         return "bg-yellow-500"; // Trưởng ban - Vàng
       case 4:

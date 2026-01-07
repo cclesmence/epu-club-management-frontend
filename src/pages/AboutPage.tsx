@@ -283,7 +283,7 @@ const AboutPage = () => {
             <div className="prose prose-sm max-w-none">
               <p className="text-muted-foreground leading-relaxed">
                 {department.sortDescription ||
-                  "Phòng Phát triển Văn hoá Sinh viên (ICPDP) là đơn vị chịu trách nhiệm tổ chức và quản lý các hoạt động ngoại khóa, câu lạc bộ sinh viên tại Đại học FPT. Chúng tôi cam kết tạo ra môi trường học tập và phát triển toàn diện cho sinh viên thông qua các hoạt động văn hóa, thể thao và các câu lạc bộ đa dạng."}
+                  "Phòng Phát triển Văn hoá Sinh viên (ICPDP) là đơn vị chịu trách nhiệm tổ chức và quản lý các hoạt động ngoại khóa, câu lạc bộ sinh viên tại Đại học EPU. Chúng tôi cam kết tạo ra môi trường học tập và phát triển toàn diện cho sinh viên thông qua các hoạt động văn hóa, thể thao và các câu lạc bộ đa dạng."}
               </p>
             </div>
           </CardContent>
