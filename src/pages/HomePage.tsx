@@ -261,7 +261,7 @@ const HomePage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => searchTerm && performSearch(searchTerm)}
-                className="absolute right-2 px-6 py-2 rounded-full bg-[#005ab7] text-white shadow-md flex items-center gap-2 hover:bg-[#e55a2b]"
+                className="absolute right-2 px-6 py-2 rounded-full bg-[#005ab7] text-white shadow-md flex items-center gap-2 hover:bg-[#134596]"
               >
                 <Search className="w-5 h-5" />
                 Tìm kiếm

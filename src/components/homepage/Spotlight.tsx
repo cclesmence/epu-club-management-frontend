@@ -20,7 +20,7 @@ const SpotlightSection: React.FC<Props> = ({ spotlight }) => {
         <p className="text-gray-700 mb-6">{spotlight.description}</p>
         <a
           href={spotlight.callToActionLink}
-          className="inline-block bg-[#005ab7] text-white px-6 py-3 rounded-full hover:bg-[#e55a2b] transition-colors font-semibold"
+          className="inline-block bg-[#005ab7] text-white px-6 py-3 rounded-full hover:bg-[#134596] transition-colors font-semibold"
         >
           {spotlight.callToActionText}
         </a>
