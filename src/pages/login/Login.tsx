@@ -110,7 +110,7 @@ const LoginPage: React.FC = () => {
     // It opens Google's account picker in a popup window
     const clientId =
       import.meta.env.VITE_GOOGLE_CLIENT_ID ||
-      "982768167645-ol552hiben0blq9es83e1b2ici5l56nj.apps.googleusercontent.com";
+      "579761062626-ab7142u1563glcjv8dacr7e5l67dpsom.apps.googleusercontent.com";
     
     // Use a dedicated callback page to handle OAuth redirect
     const redirectUri = `${window.location.origin}/google-oauth-callback.html`;
